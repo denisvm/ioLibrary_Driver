@@ -251,8 +251,8 @@ int TimerLeftMS(Timer*);
 /*
  * @brief Network interface porting
  */
-int w5x00_read(Network*, unsigned char*, int);
-int w5x00_write(Network*, unsigned char*, int);
+int w5x00_read(Network*, unsigned char*, int, int);
+int w5x00_write(Network*, unsigned char*, int, int);
 void w5x00_disconnect(Network*);
 void NewNetwork(Network* n, int sn);
 int ConnectNetwork(Network*, char*, int);
